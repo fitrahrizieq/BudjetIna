@@ -1,0 +1,11 @@
+object frmMain: TfrmMain
+  Left = 237
+  Height = 337
+  Top = 150
+  Width = 888
+  Caption = 'frmMain'
+  KeyPreview = True
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '1.2.4.0'
+end
