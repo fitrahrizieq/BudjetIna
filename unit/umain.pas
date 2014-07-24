@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, PrintersDlgs, Forms, Controls, Graphics, Dialogs,
-  ComCtrls, ExtCtrls, StdCtrls, Menus, ActnList;
+  ComCtrls, ExtCtrls, StdCtrls, Menus, ActnList, ValEdit, ExpandPanels;
 
 type
 
@@ -17,28 +17,52 @@ type
     acsKoneksi: TAction;
     acsLogin: TAction;
     acsPrinter: TAction;
-    Action2: TAction;
-    Action3: TAction;
-    Action4: TAction;
-    Action5: TAction;
-    Action6: TAction;
+    acrSKPD: TAction;
+    acrKodrek: TAction;
+    acrProgram: TAction;
+    acrKegiatan: TAction;
+    acdPendapatan: TAction;
+    acbAbout: TAction;
+    acbHelp: TAction;
+    acRefreshdata: TAction;
+    acdBTL: TAction;
+    acdLS: TAction;
+    acdPembiayaan: TAction;
+    acr: TAction;
+    actPengguna: TAction;
+    actDatabase: TAction;
     actlist1: TActionList;
     imgTop: TImage;
     lblApp1: TLabel;
     lblApp2: TLabel;
     MenuItem1: TMenuItem;
+    MenuItem10: TMenuItem;
+    MenuItem11: TMenuItem;
+    MenuItem12: TMenuItem;
+    MenuItem13: TMenuItem;
+    MenuItem14: TMenuItem;
+    MenuItem15: TMenuItem;
+    MenuItem16: TMenuItem;
+    MenuItem17: TMenuItem;
+    MenuItem18: TMenuItem;
+    MenuItem19: TMenuItem;
     MenuItem2: TMenuItem;
+    MenuItem20: TMenuItem;
     MenuItem3: TMenuItem;
     MenuItem4: TMenuItem;
     MenuItem5: TMenuItem;
     MenuItem6: TMenuItem;
     MenuItem7: TMenuItem;
+    MenuItem8: TMenuItem;
+    MenuItem9: TMenuItem;
+    MyRollOut1: TMyRollOut;
     pm1: TPopupMenu;
     pm2: TPopupMenu;
     pm3: TPopupMenu;
     pm4: TPopupMenu;
     pm5: TPopupMenu;
     pm6: TPopupMenu;
+    pm7: TPopupMenu;
     PrinterSetupDialog1: TPrinterSetupDialog;
     stsBar: TStatusBar;
     Timer1: TTimer;
@@ -49,9 +73,13 @@ type
     ToolButton4: TToolButton;
     ToolButton5: TToolButton;
     ToolButton6: TToolButton;
+    valInfo: TValueListEditor;
     procedure acsExitExecute(Sender: TObject);
     procedure acsPrinterExecute(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure FormResize(Sender: TObject);
+    procedure MyRollOut1Collapse(Sender: TObject);
+    procedure MyRollOut1Expand(Sender: TObject);
     procedure Timer1Timer(Sender: TObject);
   private
     { private declarations }
@@ -77,6 +105,29 @@ begin
   stsBar.Panels[1].Text:=FormatDateTime('hh:nn:ss',Now);
   lblApp1.caption:='Aplikasi Anggaran';
   lblApp2.caption:='#FariqSoft@2014';
+  MyRollOut1.Button.Caption:='<<';
+  MyRollOut1.Collapsed:=true;
+  valInfo.InsertRow('Jml SKPD','',true);
+  valInfo.InsertRow('Total Anggaran','',true);
+  valInfo.InsertRow('Pendapatan','',true);
+  valInfo.InsertRow('B.T.L','',true);
+  valInfo.InsertRow('L.S','',true);
+  valInfo.InsertRow('Pembiayaan','',true);
+end;
+
+procedure TfrmMain.FormResize(Sender: TObject);
+begin
+
+end;
+
+procedure TfrmMain.MyRollOut1Collapse(Sender: TObject);
+begin
+  MyRollOut1.Button.Caption:='<<';
+end;
+
+procedure TfrmMain.MyRollOut1Expand(Sender: TObject);
+begin
+  MyRollOut1.Button.Caption:='Informasi';
 end;
 
 procedure TfrmMain.acsExitExecute(Sender: TObject);

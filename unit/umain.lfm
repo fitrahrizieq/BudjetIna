@@ -9,6 +9,7 @@ object frmMain: TfrmMain
   Color = 9145227
   KeyPreview = True
   OnCreate = FormCreate
+  OnResize = FormResize
   Position = poScreenCenter
   LCLVersion = '1.2.4.0'
   object stsBar: TStatusBar
@@ -181,13 +182,13 @@ object frmMain: TfrmMain
     object ToolButton3: TToolButton
       Left = 145
       Top = 0
-      Caption = '&Data'
+      Caption = 'Pen&dataan'
       DropdownMenu = pm3
       ImageIndex = 15
       Style = tbsDropDown
     end
     object ToolButton4: TToolButton
-      Left = 217
+      Left = 221
       Top = 0
       Caption = '&Laporan'
       DropdownMenu = pm4
@@ -195,7 +196,7 @@ object frmMain: TfrmMain
       Style = tbsDropDown
     end
     object ToolButton5: TToolButton
-      Left = 289
+      Left = 293
       Top = 0
       Caption = '&Perangkat'
       DropdownMenu = pm5
@@ -203,7 +204,7 @@ object frmMain: TfrmMain
       Style = tbsDropDown
     end
     object ToolButton6: TToolButton
-      Left = 362
+      Left = 366
       Top = 0
       Caption = '&Bantuan'
       DropdownMenu = pm6
@@ -235,87 +236,72 @@ object frmMain: TfrmMain
     ParentColor = False
     ParentFont = False
   end
+  object MyRollOut1: TMyRollOut
+    Left = 536
+    Height = 285
+    Top = 133
+    Width = 301
+    Anchors = [akTop, akRight, akBottom]
+    BorderStyle = bsSingle
+    ClientHeight = 281
+    ClientWidth = 297
+    Color = 13948116
+    ParentColor = False
+    TabOrder = 2
+    ExpandedButtonColor = 16287767
+    CollapsedButtonColor = clSkyBlue
+    CollapseKind = akRight
+    ExpandedSize = 301
+    ButtonPosition = akTop
+    ButtonSize = 27
+    Button.Left = 0
+    Button.Height = 27
+    Button.Top = 0
+    Button.Width = 297
+    Button.Anchors = [akTop, akLeft, akRight]
+    Button.Caption = 'Informasi'
+    Button.Color = 16287767
+    Button.TabOrder = 0
+    AnimationSpeed = 20
+    OnExpand = MyRollOut1Expand
+    OnCollapse = MyRollOut1Collapse
+    object valInfo: TValueListEditor
+      Left = 1
+      Height = 252
+      Top = 28
+      Width = 295
+      Align = alClient
+      AutoEdit = False
+      DefaultColWidth = 120
+      FixedCols = 0
+      Flat = True
+      PopupMenu = pm7
+      RowCount = 2
+      TabOrder = 1
+      TabStop = False
+      Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goColSizing, goThumbTracking]
+      Strings.Strings = (
+        ''
+      )
+      TitleCaptions.Strings = (
+        'Data'
+        'Keterangan'
+      )
+      ColWidths = (
+        120
+        174
+      )
+    end
+  end
   object pm1: TPopupMenu
     Images = DM.ImgLst16
     left = 22
     top = 144
     object MenuItem1: TMenuItem
       Action = acsLogin
-      Bitmap.Data = {
-        36040000424D3604000000000000360000002800000010000000100000000100
-        2000000000000004000064000000640000000000000000000000EEEDED00CBCA
-        CAFF767473FF474544FF262321FF1F1E23FF6A6050FF5E3B0CFF70593AFF3336
-        40FF302D2DFF63605FFF858383FFBBB9B9FFE2E1E1FFFFFFFFFF61605DFF5553
-        51FF35312FFF383432FF3C3634FF272B38FFFFEEC6FFEB8B00FFFFEA9AFF6D75
-        87FF25201BFF383432FF332F2DFF2E2A29FF363332FFFFFFFFFF686564FF7E79
-        76FF3E3836FF393533FF36302EFF3B3D43FFFDEFD4FFD4901DFFFFF9D4FF6366
-        6CFF241E1BFF3E3836FF3E3937FF3F3D39FF373533FFFFFFFFFF6F6D6CFF7A76
-        74FF5C5654FF373330FF322C2AFF575355FFFFFFFCFFE4AF55FFFFFFFAFF807F
-        84FF272221FF403B39FF423D3BFF3A3734FF565453FFFFFFFFFFBFBEBDFF635F
-        5FFF9A9696FF352F2FFF2A2524FF706E71FFFFFFFFFFEBC170FFFFFFFFFF9693
-        96FF211A1AFF45403FFF494443FF302B2AFFBEBDBDFFFFFFFFFFFFFFFFFFC0C0
-        BFFF7A7576FF7F7B7AFF7D7978FFFFFFFFFFFFECC2FFFFCE56FFFFF4BEFFF5F8
-        FFFF989392FF322A29FF433E3DFF82807FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-        FFFFA9A7A6FF736F6DFFFFFFFFFFFDFEFFFFCAD8F6FFA4BBD5FFBACFEDFFFFFF
-        FFFFFFFFFFFF50494AFF63605EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-        FFFFFFFFFFFFD3CFCEFF808595FF7BC3FFFF198AF0FF0A87FDFF0281F4FF55A9
-        FDFF9B939DFFA19D93FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-        FFFFFFFFFFFFFFFFFFFF5397EEFF4CBFFFFF2BA6FCFF3AAAFAFF3AABFAFF27AE
-        FFFF4D76B2FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-        FFFFFFFFFFFFFFFFFFFF86D0FFFF49B9F9FF3AB0F8FF3EB3FAFF40B3F9FF47C3
-        FFFF37A1F2FFDDE3F6FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-        FFFFFFFFFFFFE4E9F5FFACEFFFFF8CE8FFFF74D0FFFF5BC4FBFF56C3FAFF59CE
-        FFFF4FAFE9FFCBD2E3FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-        FFFFFFFFFFFFEAE7E4FF667B81FF74B8D9FF95E7FFFF9AE8FFFF8BD5FCFF9AF4
-        FFFF84C6CFFFB0A9A3FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-        FFFFFFFFFFFFE8E8E8FF302421FF2D1B13FF343031FF99EAF2FFB6FFFFFFA7FD
-        FFFF4A585DFF9E9A97FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-        FFFFFFFFFFFFF0EFEFFF413D3BFF423C3AFF301F1BFF5D7270FF719798FF464D
-        4CFF2E1E1AFFA6A4A3FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-        FFFFFFFFFFFFFFFFFFFF5C5755FF47423FFF464140FF3C3230FF352725FF392C
-        2AFF413C3BFFD4D3D2FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-        FFFFFFFFFFFFFFFFFFFFF4F3F3FF655F5EFF4D4645FF5A5352FF807B7BFF6764
-        63FFC6C4C4FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-      }
     end
     object MenuItem3: TMenuItem
       Action = acsKoneksi
-      Bitmap.Data = {
-        36040000424D3604000000000000360000002800000010000000100000000100
-        2000000000000004000064000000640000000000000000000000FFFFFF00F6E3
-        C1FFE4B052FFE4AE5DFFE0AC63FFDDA865FFD89E5AFFD4984DFFD09147FFCC8B
-        42FFC5843CFFC37B35FFBD732EFFB6661CFFBC7F50FFE3CBBBFFFFFFFF00E7B4
-        58FFFAE8B3FFFDEDC3FFFFFBEFFFFFFFFF00FFF4DEFFF8E5ACFFF9E08DFFF9DB
-        83FFF2CC69FFEBBC4EFFE4AB34FFE6A01CFFC57713FFB26C38FFFFFFFF00E8B5
-        5DFFF8E3ADFFF6DBA4FFF8E8CDFFFAEFE3FFF5DFBEFFEFD194FFEFCC79FFEEC7
-        72FFE7B95CFFE1AB46FFDB9D31FFDB931CFFC47813FFB57442FFFFFFFF00E7B7
-        5FFFFBE9BBFFF9E0ABFFFBEED9FFFCF5F0FFF8E5C8FFF2D69AFFF3D17FFFF1CC
-        76FFEBBE5EFFE5AF45FFDC9E2FFFDE9519FFC57914FFB57442FFFFFFFF00E7B2
-        56FFF4DBA7FFF5DEB1FFF5E5C8FFF7E9D8FFF2DDBAFFEED29DFFEDCC8AFFECCA
-        81FFE6BF71FFE3B660FFDCAA4DFFDEA739FFBD731DFFB36D3AFFFFFFFF00F7E7
-        CAFFE5B557FFE6B964FFE2B66BFFE0B776FFDAAA5DFFD69E4BFFD39844FFCE90
-        3FFFCA8738FFC37C32FFBD712BFFBA6E23FFB7784CFFE8D4C8FFFFFFFF00EDC8
-        7FFFFAE7B5FFF7E0ACFFFBEED9FFFDF6F1FFF8E4C7FFF1D69CFFF3D17FFFF1CD
-        75FFEBBE5FFFE3AD46FFDD9D2EFFDC9417FFC87D12FFC18349FFFFFFFF00EDC6
-        77FFF8E1A8FFF7DEAAFFF9EAD2FFFBF1E9FFF6E1C2FFEFD398FFF0CE7DFFEFCA
-        76FFE8BB5FFFE2AF48FFDCA032FFD9921CFFC67A14FFBF7C40FFFFFFFF00EDC6
-        78FFF8E2ABFFF7DDA2FFF9EAD0FFFBF1E7FFF6E1BFFFEFD293FFF0CC75FFEFC8
-        6FFFE8B958FFE0AA40FFDA9A2AFFD88E14FFC6770EFFBF7C3EFFFFFFFF00EECA
-        80FFFAEBCBFFF8E5BEFFFAEDDCFFFBF5EFFFF9E8CFFFF5DCACFFF3D799FFF2D5
-        8FFFECCA7CFFE8BE67FFE1B150FFE1AC3AFFCD8D26FFC3874CFFFFFFFF00F8E9
-        CCFFE7BB65FFE9BF7AFFE6C285FFE4C28FFFDEB371FFD9A65BFFD69F54FFD29B
-        4DFFCD9045FFC8893EFFC37D35FFC07D2DFFC18755FFEAD7C9FFFFFFFF00EABF
-        6CFFF7E1A4FFF7DEA4FFF8E9CFFFFAF1E7FFF6E1BDFFF1D393FFF1CE78FFF0C9
-        6FFFE9BA5AFFE3AB43FFDD9A2DFFDA9017FFC27311FFB8753AFFFFFFFF00EEC9
-        7AFFF8E3ADFFF7E0ACFFFBEBD5FFFCF3EBFFF9E3C5FFF0D59AFFF0D07FFFF0CB
-        78FFEABD60FFE4AF49FFDEA033FFDB951CFFC87D14FFC18041FFFFFFFF00EDC7
-        78FFF8DFA6FFF7DCA1FFF8E7CCFFFAEFE2FFF7DFBCFFEFD18FFFEDCB74FFEDC6
-        6DFFE6B756FFE0A83FFFDA9829FFD78C14FFC5760EFFBF7D40FFFFFFFF00ECC5
-        75FFFCF1CFFFFCEBC6FFFFF8EEFFFFFFFF00FEF1DFFFF7E5B7FFF7E09CFFF6DC
-        94FFF1D07DFFEBC464FFE6B34CFFE6AC34FFCF8B21FFBE7939FFFFFFFF00F7E6
-        C5FFEBC376FFEAC685FFE8C387FFE6C38BFFE3B97EFFE0B474FFDCAE6CFFD8A9
-        69FFD5A262FFD29C5CFFCD9552FFC89040FFC7925EFFE6CEBCFF
-      }
     end
     object MenuItem6: TMenuItem
       Caption = '-'
@@ -407,13 +393,37 @@ object frmMain: TfrmMain
     left = 90
     top = 145
     object MenuItem2: TMenuItem
-      Caption = 'New Item1'
+      Action = acrKodrek
+    end
+    object MenuItem8: TMenuItem
+      Action = acrSKPD
+    end
+    object MenuItem9: TMenuItem
+      Caption = '-'
+    end
+    object MenuItem10: TMenuItem
+      Action = acrProgram
+    end
+    object MenuItem11: TMenuItem
+      Action = acrKegiatan
     end
   end
   object pm3: TPopupMenu
     Images = DM.ImgLst16
     left = 152
     top = 144
+    object MenuItem14: TMenuItem
+      Action = acdPendapatan
+    end
+    object MenuItem16: TMenuItem
+      Action = acdBTL
+    end
+    object MenuItem17: TMenuItem
+      Action = acdLS
+    end
+    object MenuItem18: TMenuItem
+      Action = acdPembiayaan
+    end
   end
   object pm4: TPopupMenu
     Images = DM.ImgLst16
@@ -424,11 +434,23 @@ object frmMain: TfrmMain
     Images = DM.ImgLst16
     left = 304
     top = 145
+    object MenuItem19: TMenuItem
+      Action = actPengguna
+    end
+    object MenuItem20: TMenuItem
+      Action = actDatabase
+    end
   end
   object pm6: TPopupMenu
     Images = DM.ImgLst16
     left = 384
     top = 145
+    object MenuItem12: TMenuItem
+      Action = acbHelp
+    end
+    object MenuItem13: TMenuItem
+      Action = acbAbout
+    end
   end
   object Timer1: TTimer
     OnTimer = Timer1Timer
@@ -446,36 +468,38 @@ object frmMain: TfrmMain
       OnExecute = acsExitExecute
       ShortCut = 16465
     end
-    object Action2: TAction
+    object acrSKPD: TAction
       Category = 'Referensi'
-      Caption = 'Action2'
+      Caption = 'SKPD'
     end
-    object Action3: TAction
+    object acdPendapatan: TAction
       Category = 'Data'
-      Caption = 'Action3'
+      Caption = 'Pendapatan'
     end
-    object Action4: TAction
+    object acr: TAction
       Category = 'Laporan'
-      Caption = 'Action4'
+      Caption = 'acr'
     end
-    object Action5: TAction
+    object actPengguna: TAction
       Category = 'Tools'
-      Caption = 'Action5'
+      Caption = 'Pengguna'
+      ImageIndex = 36
     end
-    object Action6: TAction
+    object actDatabase: TAction
       Category = 'Tools'
-      Caption = 'Bantuan'
+      Caption = 'Database'
+      ImageIndex = 14
     end
     object acsKoneksi: TAction
       Category = 'Sistem'
       Caption = 'Koneksi'
-      ImageIndex = 14
+      ImageIndex = 38
     end
     object acsLogin: TAction
       Tag = 1
       Category = 'Sistem'
       Caption = 'Login'
-      ImageIndex = 6
+      ImageIndex = 37
     end
     object acsPrinter: TAction
       Category = 'Sistem'
@@ -483,9 +507,55 @@ object frmMain: TfrmMain
       ImageIndex = 24
       OnExecute = acsPrinterExecute
     end
+    object acrKodrek: TAction
+      Category = 'Referensi'
+      Caption = 'Kode Rekening'
+    end
+    object acrProgram: TAction
+      Category = 'Referensi'
+      Caption = 'Program'
+    end
+    object acrKegiatan: TAction
+      Category = 'Referensi'
+      Caption = 'Kegiatan'
+    end
+    object acbAbout: TAction
+      Category = 'Bantuan'
+      Caption = 'Tentang'
+    end
+    object acbHelp: TAction
+      Category = 'Bantuan'
+      Caption = 'Bantuan'
+      ImageIndex = 1
+      ShortCut = 112
+    end
+    object acRefreshdata: TAction
+      Caption = 'Refresh data'
+      ImageIndex = 26
+    end
+    object acdBTL: TAction
+      Category = 'Data'
+      Caption = 'Belanja Tdk Langsung'
+    end
+    object acdLS: TAction
+      Category = 'Data'
+      Caption = 'Belanja Langsung'
+    end
+    object acdPembiayaan: TAction
+      Category = 'Data'
+      Caption = 'acdPembiayaan'
+    end
   end
   object PrinterSetupDialog1: TPrinterSetupDialog
     left = 136
     top = 232
+  end
+  object pm7: TPopupMenu
+    Images = DM.ImgLst16
+    left = 392
+    top = 200
+    object MenuItem15: TMenuItem
+      Action = acRefreshdata
+    end
   end
 end

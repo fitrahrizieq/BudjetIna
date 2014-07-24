@@ -4,7 +4,7 @@
     <PathDelim Value="\"/>
     <Version Value="9"/>
     <BuildModes Active="Default"/>
-    <Units Count="3">
+    <Units Count="12">
       <Unit0>
         <Filename Value="SysBudgeting.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -12,7 +12,7 @@
         <WindowIndex Value="0"/>
         <TopLine Value="1"/>
         <CursorPos X="51" Y="14"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="24"/>
       </Unit0>
       <Unit1>
         <Filename Value="unit\umain.pas"/>
@@ -22,154 +22,99 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uMain"/>
         <IsVisibleTab Value="True"/>
-        <EditorIndex Value="0"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="80"/>
-        <CursorPos X="40" Y="83"/>
-        <UsageCount Value="22"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
+        <TopLine Value="97"/>
+        <CursorPos X="46" Y="100"/>
+        <UsageCount Value="24"/>
       </Unit1>
       <Unit2>
         <Filename Value="unit\udm.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="DM"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="DataModule"/>
         <UnitName Value="uDm"/>
-        <EditorIndex Value="1"/>
         <WindowIndex Value="0"/>
         <TopLine Value="1"/>
-        <CursorPos X="49" Y="6"/>
-        <UsageCount Value="22"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
+        <CursorPos X="30" Y="5"/>
+        <UsageCount Value="24"/>
       </Unit2>
+      <Unit3>
+        <Filename Value="E:\soft\delphi\Lazarus\component\indy9\lazarus\registerindycomponents.pp"/>
+        <UnitName Value="RegisterIndyComponents"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="7"/>
+        <CursorPos X="2" Y="17"/>
+        <UsageCount Value="10"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="E:\soft\delphi\Lazarus\component\indy9\lazarus\IdAntiFreeze.pas"/>
+        <UnitName Value="IdAntiFreeze"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="10"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="E:\soft\delphi\Lazarus\component\indy-10.2.0.3\indy-10.2.0.3\lazarus\IdAboutVCL.pas"/>
+        <UnitName Value="IdAboutVCL"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="66"/>
+        <CursorPos X="32" Y="73"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="E:\soft\delphi\Lazarus\component\indy-10.2.0.3\indy-10.2.0.3\fpc\IdStackLinux.pas"/>
+        <UnitName Value="IdStackLinux"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="55"/>
+        <CursorPos X="5" Y="66"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="E:\soft\delphi\Lazarus\component\indy9\source\IdCompressionIntercept.pas"/>
+        <UnitName Value="IdCompressionIntercept"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="360"/>
+        <CursorPos X="38" Y="370"/>
+        <UsageCount Value="10"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="E:\soft\delphi\Lazarus\component\indy4lazarus-20040117\source\idwinsock2.pas"/>
+        <UnitName Value="IdWinSock2"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="109" Y="14"/>
+        <UsageCount Value="10"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="E:\soft\delphi\Lazarus\component\indy4lazarus-20040117\source\idantifreeze.pas"/>
+        <UnitName Value="IdAntiFreeze"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="19"/>
+        <CursorPos X="41" Y="29"/>
+        <UsageCount Value="10"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="E:\soft\delphi\Lazarus\component\roth-a-expandpanels-fb3de9a\roth-a-expandpanels-fb3de9a\expandpanels.pas"/>
+        <UnitName Value="ExpandPanels"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1342"/>
+        <CursorPos X="62" Y="1358"/>
+        <UsageCount Value="10"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="C:\lazarus\lcl\valedit.pas"/>
+        <UnitName Value="ValEdit"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="786"/>
+        <CursorPos X="27" Y="796"/>
+        <UsageCount Value="10"/>
+      </Unit11>
     </Units>
-    <General>
-      <ActiveWindowIndexAtStart Value="0"/>
-    </General>
-    <JumpHistory Count="30" HistoryIndex="29">
-      <Position1>
-        <Filename Value="unit\umain.pas"/>
-        <Caret Line="43" Column="35" TopLine="32"/>
-      </Position1>
-      <Position2>
-        <Filename Value="unit\umain.pas"/>
-        <Caret Line="44" Column="35" TopLine="33"/>
-      </Position2>
-      <Position3>
-        <Filename Value="unit\umain.pas"/>
-        <Caret Line="45" Column="35" TopLine="34"/>
-      </Position3>
-      <Position4>
-        <Filename Value="unit\umain.pas"/>
-        <Caret Line="46" Column="35" TopLine="35"/>
-      </Position4>
-      <Position5>
-        <Filename Value="unit\umain.pas"/>
-        <Caret Line="47" Column="35" TopLine="36"/>
-      </Position5>
-      <Position6>
-        <Filename Value="unit\umain.pas"/>
-        <Caret Line="49" Column="35" TopLine="38"/>
-      </Position6>
-      <Position7>
-        <Filename Value="unit\umain.pas"/>
-        <Caret Line="52" Column="42" TopLine="45"/>
-      </Position7>
-      <Position8>
-        <Filename Value="unit\umain.pas"/>
-        <Caret Line="14" Column="16" TopLine="16"/>
-      </Position8>
-      <Position9>
-        <Filename Value="unit\umain.pas"/>
-        <Caret Line="63" Column="49" TopLine="45"/>
-      </Position9>
-      <Position10>
-        <Filename Value="unit\umain.pas"/>
-        <Caret Line="51" Column="37" TopLine="48"/>
-      </Position10>
-      <Position11>
-        <Filename Value="unit\umain.pas"/>
-        <Caret Line="52" Column="37" TopLine="49"/>
-      </Position11>
-      <Position12>
-        <Filename Value="unit\umain.pas"/>
-        <Caret Line="53" Column="37" TopLine="50"/>
-      </Position12>
-      <Position13>
-        <Filename Value="unit\umain.pas"/>
-        <Caret Line="54" Column="37" TopLine="51"/>
-      </Position13>
-      <Position14>
-        <Filename Value="unit\umain.pas"/>
-        <Caret Line="55" Column="37" TopLine="52"/>
-      </Position14>
-      <Position15>
-        <Filename Value="unit\umain.pas"/>
-        <Caret Line="56" Column="37" TopLine="53"/>
-      </Position15>
-      <Position16>
-        <Filename Value="unit\umain.pas"/>
-        <Caret Line="57" Column="37" TopLine="54"/>
-      </Position16>
-      <Position17>
-        <Filename Value="unit\umain.pas"/>
-        <Caret Line="59" Column="37" TopLine="56"/>
-      </Position17>
-      <Position18>
-        <Filename Value="unit\umain.pas"/>
-        <Caret Line="72" Column="25" TopLine="63"/>
-      </Position18>
-      <Position19>
-        <Filename Value="unit\umain.pas"/>
-        <Caret Line="73" Column="25" TopLine="64"/>
-      </Position19>
-      <Position20>
-        <Filename Value="unit\umain.pas"/>
-        <Caret Line="74" Column="25" TopLine="65"/>
-      </Position20>
-      <Position21>
-        <Filename Value="unit\umain.pas"/>
-        <Caret Line="75" Column="25" TopLine="66"/>
-      </Position21>
-      <Position22>
-        <Filename Value="unit\umain.pas"/>
-        <Caret Line="76" Column="25" TopLine="67"/>
-      </Position22>
-      <Position23>
-        <Filename Value="unit\umain.pas"/>
-        <Caret Line="77" Column="25" TopLine="68"/>
-      </Position23>
-      <Position24>
-        <Filename Value="unit\umain.pas"/>
-        <Caret Line="78" Column="25" TopLine="69"/>
-      </Position24>
-      <Position25>
-        <Filename Value="unit\umain.pas"/>
-        <Caret Line="79" Column="25" TopLine="70"/>
-      </Position25>
-      <Position26>
-        <Filename Value="unit\umain.pas"/>
-        <Caret Line="80" Column="25" TopLine="71"/>
-      </Position26>
-      <Position27>
-        <Filename Value="unit\umain.pas"/>
-        <Caret Line="81" Column="25" TopLine="72"/>
-      </Position27>
-      <Position28>
-        <Filename Value="unit\udm.pas"/>
-        <Caret Line="6" Column="49" TopLine="1"/>
-      </Position28>
-      <Position29>
-        <Filename Value="unit\umain.pas"/>
-        <Caret Line="77" Column="52" TopLine="73"/>
-      </Position29>
-      <Position30>
-        <Filename Value="unit\umain.pas"/>
-        <Caret Line="79" Column="52" TopLine="75"/>
-      </Position30>
-    </JumpHistory>
+    <JumpHistory Count="0" HistoryIndex="-1"/>
   </ProjectSession>
   <EditorMacros Count="0"/>
 </CONFIG>
