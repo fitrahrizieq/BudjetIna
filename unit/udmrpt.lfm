@@ -1,0 +1,35 @@
+object DmRpt: TDmRpt
+  OldCreateOrder = False
+  Height = 320
+  HorizontalOffset = 238
+  VerticalOffset = 150
+  Width = 707
+  object frDBDataSet1: TfrDBDataSet
+    left = 25
+    top = 16
+  end
+  object frReport1: TfrReport
+    InitialZoom = pzDefault
+    Options = []
+    PreviewButtons = [pbZoom, pbPrint, pbHelp, pbExit]
+    DataType = dtDataSet
+    left = 648
+    top = 8
+  end
+  object frTNPDFExport1: TfrTNPDFExport
+    left = 594
+    top = 16
+  end
+  object frHTMExport1: TfrHTMExport
+    left = 606
+    top = 65
+  end
+  object frCSVExport1: TfrCSVExport
+    left = 614
+    top = 122
+  end
+  object frBarCodeObject1: TfrBarCodeObject
+    left = 616
+    top = 184
+  end
+end

@@ -4,15 +4,15 @@
     <PathDelim Value="\"/>
     <Version Value="9"/>
     <BuildModes Active="Default"/>
-    <Units Count="12">
+    <Units Count="32">
       <Unit0>
         <Filename Value="SysBudgeting.lpr"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="SysBudgeting"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="1"/>
-        <CursorPos X="51" Y="14"/>
-        <UsageCount Value="24"/>
+        <TopLine Value="10"/>
+        <CursorPos X="39" Y="18"/>
+        <UsageCount Value="28"/>
       </Unit0>
       <Unit1>
         <Filename Value="unit\umain.pas"/>
@@ -21,11 +21,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uMain"/>
-        <IsVisibleTab Value="True"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="97"/>
-        <CursorPos X="46" Y="100"/>
-        <UsageCount Value="24"/>
+        <TopLine Value="103"/>
+        <CursorPos X="64" Y="113"/>
+        <UsageCount Value="28"/>
       </Unit1>
       <Unit2>
         <Filename Value="unit\udm.pas"/>
@@ -37,25 +36,37 @@
         <WindowIndex Value="0"/>
         <TopLine Value="1"/>
         <CursorPos X="30" Y="5"/>
-        <UsageCount Value="24"/>
+        <UsageCount Value="28"/>
       </Unit2>
       <Unit3>
+        <Filename Value="unit\udmrpt.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DmRpt"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="udmrpt"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="47" Y="14"/>
+        <UsageCount Value="24"/>
+      </Unit3>
+      <Unit4>
         <Filename Value="E:\soft\delphi\Lazarus\component\indy9\lazarus\registerindycomponents.pp"/>
         <UnitName Value="RegisterIndyComponents"/>
         <WindowIndex Value="0"/>
         <TopLine Value="7"/>
         <CursorPos X="2" Y="17"/>
         <UsageCount Value="10"/>
-      </Unit3>
-      <Unit4>
+      </Unit4>
+      <Unit5>
         <Filename Value="E:\soft\delphi\Lazarus\component\indy9\lazarus\IdAntiFreeze.pas"/>
         <UnitName Value="IdAntiFreeze"/>
         <WindowIndex Value="0"/>
         <TopLine Value="1"/>
         <CursorPos X="1" Y="1"/>
         <UsageCount Value="10"/>
-      </Unit4>
-      <Unit5>
+      </Unit5>
+      <Unit6>
         <Filename Value="E:\soft\delphi\Lazarus\component\indy-10.2.0.3\indy-10.2.0.3\lazarus\IdAboutVCL.pas"/>
         <UnitName Value="IdAboutVCL"/>
         <WindowIndex Value="0"/>
@@ -63,8 +74,8 @@
         <CursorPos X="32" Y="73"/>
         <UsageCount Value="10"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
-      </Unit5>
-      <Unit6>
+      </Unit6>
+      <Unit7>
         <Filename Value="E:\soft\delphi\Lazarus\component\indy-10.2.0.3\indy-10.2.0.3\fpc\IdStackLinux.pas"/>
         <UnitName Value="IdStackLinux"/>
         <WindowIndex Value="0"/>
@@ -72,47 +83,239 @@
         <CursorPos X="5" Y="66"/>
         <UsageCount Value="10"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
-      </Unit6>
-      <Unit7>
+      </Unit7>
+      <Unit8>
         <Filename Value="E:\soft\delphi\Lazarus\component\indy9\source\IdCompressionIntercept.pas"/>
         <UnitName Value="IdCompressionIntercept"/>
         <WindowIndex Value="0"/>
         <TopLine Value="360"/>
         <CursorPos X="38" Y="370"/>
         <UsageCount Value="10"/>
-      </Unit7>
-      <Unit8>
+      </Unit8>
+      <Unit9>
         <Filename Value="E:\soft\delphi\Lazarus\component\indy4lazarus-20040117\source\idwinsock2.pas"/>
         <UnitName Value="IdWinSock2"/>
         <WindowIndex Value="0"/>
         <TopLine Value="1"/>
         <CursorPos X="109" Y="14"/>
         <UsageCount Value="10"/>
-      </Unit8>
-      <Unit9>
+      </Unit9>
+      <Unit10>
         <Filename Value="E:\soft\delphi\Lazarus\component\indy4lazarus-20040117\source\idantifreeze.pas"/>
         <UnitName Value="IdAntiFreeze"/>
         <WindowIndex Value="0"/>
         <TopLine Value="19"/>
         <CursorPos X="41" Y="29"/>
         <UsageCount Value="10"/>
-      </Unit9>
-      <Unit10>
+      </Unit10>
+      <Unit11>
         <Filename Value="E:\soft\delphi\Lazarus\component\roth-a-expandpanels-fb3de9a\roth-a-expandpanels-fb3de9a\expandpanels.pas"/>
         <UnitName Value="ExpandPanels"/>
         <WindowIndex Value="0"/>
         <TopLine Value="1342"/>
         <CursorPos X="62" Y="1358"/>
         <UsageCount Value="10"/>
-      </Unit10>
-      <Unit11>
+      </Unit11>
+      <Unit12>
         <Filename Value="C:\lazarus\lcl\valedit.pas"/>
         <UnitName Value="ValEdit"/>
         <WindowIndex Value="0"/>
         <TopLine Value="786"/>
         <CursorPos X="27" Y="796"/>
         <UsageCount Value="10"/>
-      </Unit11>
+      </Unit12>
+      <Unit13>
+        <Filename Value="E:\soft\delphi\Lazarus\component\flatstyle_01\Source\FlatMenu.pas"/>
+        <UnitName Value="FlatMenu"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="337"/>
+        <CursorPos X="45" Y="346"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="E:\soft\delphi\Lazarus\component\flatstyle_01\Source\dfs.inc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="88"/>
+        <CursorPos X="35" Y="102"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="C:\lazarus\components\lazreport\source\lr_desgn.lfm"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="45" Y="7"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="C:\lazarus\components\lazreport\source\lr_desgn.pas"/>
+        <ComponentName Value="frDesignerForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="LR_Desgn"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="43" Y="10"/>
+        <UsageCount Value="10"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="C:\lazarus\components\lazreport\source\lr_view.pas"/>
+        <ComponentName Value="frPreviewForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="LR_View"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="584"/>
+        <CursorPos X="43" Y="597"/>
+        <UsageCount Value="10"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="C:\lazarus\components\lazreport\source\lr_const.pas"/>
+        <UnitName Value="LR_Const"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="781"/>
+        <CursorPos X="43" Y="794"/>
+        <UsageCount Value="10"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="C:\lazarus\components\lazreport\source\lr_dopt.pas"/>
+        <ComponentName Value="frDocOptForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="LR_Dopt"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="24" Y="5"/>
+        <UsageCount Value="10"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="C:\lazarus\components\lazreport\source\lr_edit.pas"/>
+        <ComponentName Value="frEditorForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="LR_Edit"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="10"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="C:\lazarus\components\lazreport\source\lr_ev_ed.pas"/>
+        <ComponentName Value="frEvForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="LR_Ev_ed"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="10"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="C:\lazarus\components\lazreport\source\lr_expres.pas"/>
+        <ComponentName Value="lrExpresionEditorForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="lr_expres"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="10"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="C:\lazarus\components\lazreport\source\lr_fmted.pas"/>
+        <ComponentName Value="frFmtForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="LR_fmted"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="10"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="C:\lazarus\components\lazreport\source\lr_prntr.pas"/>
+        <UnitName Value="LR_Prntr"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="56" Y="6"/>
+        <UsageCount Value="10"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="C:\lazarus\components\lazreport\source\lr_prdlg.pas"/>
+        <ComponentName Value="frPrintForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="LR_PrDlg"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="10"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="C:\lazarus\components\lazreport\source\lr_vared.pas"/>
+        <ComponentName Value="frVaredForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="LR_Vared"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="10"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="C:\lazarus\components\lazreport\source\lr_var.pas"/>
+        <ComponentName Value="frVarForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="LR_Var"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="31" Y="6"/>
+        <UsageCount Value="10"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="unit\ufmbase.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="fmbase"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="ufmbase"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="21"/>
+        <CursorPos X="34" Y="26"/>
+        <UsageCount Value="23"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="unit\ufrmlogin.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmLogin"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="ufrmLogin"/>
+        <IsVisibleTab Value="True"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="49"/>
+        <CursorPos X="23" Y="58"/>
+        <UsageCount Value="23"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="unit\uengine.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uEngine"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="52"/>
+        <CursorPos X="32" Y="54"/>
+        <UsageCount Value="21"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="unit\conf.inc"/>
+        <IsPartOfProject Value="True"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="36" Y="1"/>
+        <UsageCount Value="21"/>
+      </Unit31>
     </Units>
     <JumpHistory Count="0" HistoryIndex="-1"/>
   </ProjectSession>

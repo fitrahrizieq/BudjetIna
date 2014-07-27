@@ -2,6 +2,8 @@ unit uMain;
 
 {$mode objfpc}{$H+}
 
+{$I conf.inc}
+
 interface
 
 uses
@@ -75,6 +77,7 @@ type
     ToolButton6: TToolButton;
     valInfo: TValueListEditor;
     procedure acsExitExecute(Sender: TObject);
+    procedure acsLoginExecute(Sender: TObject);
     procedure acsPrinterExecute(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormResize(Sender: TObject);
@@ -92,7 +95,7 @@ var
 
 implementation
 
-uses uDm;
+uses uDm, udmrpt, ufrmLogin, uEngine;
 
 {$R *.lfm}
 
@@ -103,6 +106,8 @@ begin
   caption:=Application.Title;
   stsBar.Panels[0].Text:=FormatDateTime('DD MMMM YYYY',Now);
   stsBar.Panels[1].Text:=FormatDateTime('hh:nn:ss',Now);
+  stsBar.Panels[2].Text:=Format('User: %s',[Pengguna.UserName]);
+  stsBar.Panels[3].Text:=Format('Tahun: %d',[Pengguna.Tahun]);
   lblApp1.caption:='Aplikasi Anggaran';
   lblApp2.caption:='#FariqSoft@2014';
   MyRollOut1.Button.Caption:='<<';
@@ -133,6 +138,29 @@ end;
 procedure TfrmMain.acsExitExecute(Sender: TObject);
 begin
   Application.Terminate;
+end;
+
+procedure TfrmMain.acsLoginExecute(Sender: TObject);
+begin
+
+  {$IFNDEF DEVELOP}
+  if acsLogin.tag=1 then
+  begin
+      if MessageDlg('Logoff dari aplikasi?', mtConfirmation, [mbYes,MbNo], 0)=mrYes then
+        begin
+          //ShellExecute(Handle, nil, PChar(Application.ExeName), nil, nil, SW_SHOWNORMAL);
+          Application.Terminate;
+        end;
+  end;
+  if TFrmLogin.Execute = false then
+    Application.Terminate;
+  {$ELSE}
+    if TFrmLogin.Execute then
+    begin
+      stsBar.Panels[2].Text:=Format('User: %s',[Pengguna.UserName]);
+      stsBar.Panels[3].Text:=Format('Tahun: %d',[Pengguna.Tahun]);
+    end;
+  {$ENDIF}
 end;
 
 procedure TfrmMain.acsPrinterExecute(Sender: TObject);
